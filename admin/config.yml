@@ -12,6 +12,10 @@ backend:
     deleteMedia: Suppression de l'image {{path}}
   squash_merges: true
 
+# Permet d'expérimenter en local
+# cf. https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository
+# local_backend: true
+
 media_folder: "img/netlifycms"
 
 display_url: https://beta.gouv.fr
@@ -29,10 +33,9 @@ publish_mode: editorial_workflow
 
 date_field_defaults: &date_field_defaults
   widget: datetime
-  format: YYYY-MM-DD
   dateFormat: YYYY-MM-DD
   timeFormat: false
-  default: ''
+  default: null
 
 collections:
   - name: incubators
